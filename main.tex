@@ -13,11 +13,13 @@
 \usepackage{bbold}
 \usepackage{tensor}
 \usepackage[margin=3cm]{geometry}
+\usepackage{setspace}
 \usepackage{amsmath}
-
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\onehalfspacing
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}
+
 \usepackage{caption} 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -55,230 +57,311 @@ backref=false,colorlinks=true]{hyperref}
 \renewcommand\maketitlehookd{\vfill\null}
 
 \begin{document}
-
-\maketitle
-\section{Reading and some useful topics}
-\subsection{Quasi normal modes of a black hole}
-This section is based/copied from \cite{creighton} and from \cite{maggiore}
-We will discover that BHs have a characteristic set of normal modes that can be excited, for instance by infalling matter, and then decay by emission of gravitational radiation (for this reason, they are rather called quasi-normal modes, to stress that they are damped).
-FOr the background spacetime we have the vacuum Schwarzschild metric given by the following line element:
-
-\begin{equation}
-	ds^2 = - \big(1-\frac{2GM}{c^2r} \big) (cdt)^2 + \big(1-\frac{2GM}{c^2r} \big)^{-1} dr^2 + r^2 d\theta^2 + r^2 \sin^2 \theta d \phi^2 .
-\end{equation}
-
-If we now consider a small pertrubation to our spacetime/metric then the Riemann curvature tensor will take the form
-
-\begin{equation*}
-	R_{\alpha \beta \gamma \delta} = \stackrel{0}{R}_{\alpha \beta \gamma \delta} + \stackrel{1}{R}_{\alpha \beta \gamma \delta}
-\end{equation*}
-
-where the $\stackrel{1}{R}_{\alpha \beta \gamma \delta}$ will be the outgoing gravitational-wave perturbation. It is easier to work with the basis vectors 
-\begin{align}
-	l^{\alpha} &= \frac{1}{\sqrt{2}}\big[ \frac{1}{c}\big(1-\frac{2GM}{c^2r}\big)^{-1},1,0,0 \big] \\
-	k^{\alpha} &= \frac{1}{\sqrt{2}}\big[ \frac{1}{c}, -\big(1-\frac{2GM}{c^2r}\big),0,0 \big] \\
-	m^{\alpha} &=  \frac{1}{\sqrt{2}}\big[ 0, 0,\frac{1}{r},\frac{i}{r \sin \theta} \big].
-\end{align}
-
-They satisfy the properties see \cite{creigthon}. The gravitational wave content is then captured by one single component of the Riemann tensor (WHY?) :
-
-\begin{equation}
-	\Psi_4 = -k^{\mu} m^{*\nu} k^{\rho} m^{*\sigma} \stackrel{1}{R}_{\mu \nu \rho \sigma}.
-\end{equation}
-
-Looking at all the non-vanishing Riemann components and assuming that at large distances the gravitational waves will travel out in the radial direction we get for $ \Psi_4$
-
-\begin{equation}
-	\Psi_4 = c^{-2} ( \Dot{\Dot{h}}_{+} - i\Dot{\Dot{h}}_{x}) .
-\end{equation}
-
-Then find the gravitational wave equation(4.95 in \cite{creighton}) and then arrive at the Teukolsky equation. This equation is separable into a sperical part and a radial part with the included fourier transform of the time part. This can then be solved for certain values of the eigenfrequency $\omega$ resulting in the quasi normal modes of the black hole. The frequency solutions are complex and so they decay with time exponentially going to the stable state without any perturbation. This analysis can also be done for the Kerr metric (rotating black hole). 
-
-\subsection{Gravitational perturbations}
-Based on \cite{maggiore}.
-
-\subsubsection{Axial perturbations}
-We see that the equation for scalar perturbations and that for axial
-gravitational perturbations have the same form, with a slightly different
-effective potential. The latter can be written in a unified manner as
-
-\begin{equation}
-	V_l(r) = A(r) \big[\frac{l(l+1)}{r^2} + \frac{(1-\sigma^2)R_S}{r^3} \big],
-\end{equation}
-
-with $\sigma = 0$ for scalar perturbations and $\sigma = 2 $ for axial gravitational perturbations. For electromagnetic perturbations this can be shown to be equal to $\sigma = 1$. So we can associate $\sigma$ with the spin in the interaction. 
-
-The Regge-Wheeler equation describing the axial perturbations is
-
-\begin{equation}
-	(\partial_*^2 - \partial_0^2)Q_{lm} - V_l^{RW}(r)Q_{lm} = S_{lm}^{ax}
-\end{equation}
-with the potential as above for $\sigma = 2$ and the Regge-Wheeler function 
-\begin{equation}
-	Q_{lm}(t,r) = \frac{1}{r} A(r) h^{(1)}_{lm}(t,r),
-\end{equation}
-
-and a source term $S_{lm}^{ax}$ (see \cite{maggiore} equation (12.99)).
-
-The Regge-Wheeler function we perform a Fourier transform 
-
-\begin{equation}
-	Q_{lm}(t,r) = \int \frac{d\omega}{2 \pi} \Tilde{Q}_{lm}(\omega ,r) e^{-i\omega t}
-\end{equation}
-
-as well on the source term such that we get a Schrodinger like equation for the Regge-Wheeler function:
-\begin{equation}
-	\frac{d^2}{dr_*^2}\Tilde{Q}_{lm} + \Big[\frac{\omega^2}{c^2} - V_l^{RW}(r) \Big] \Tilde{Q}_{lm} = \Tilde{S}_{lm}^{ax}
-\end{equation}
-
-\subsubsection{Polar perturbations}
-
-We also find equations involving the four polar perturbations $H^{(0)}_{lm}$ , $H^{(1)}_{lm}$ , $H^{(2)}_{lm}$ and $K_{lm}$. For these components we again take the Fourier transform w.r.t time as well as for the source term. Introducing the Zerilli function we can write the dynamical equations for the polar perturbations to a single equation. With a complicated potential and source term. However when you do the calculation you end up with one single Schrodinger like equation, just as we had for the axial perturbations . At large l we even find that asymptotically for large $r$ both the potentials behave the same:
-\begin{equation}
-	V_l^Z \approx V_l^{RW} \approx \frac{l(l+1)}{r^2}
-\end{equation}
-
-The two potentials will also produce the same spectrum of quasi-normals modes.
-
-\subsubsection{Boundary conditions}
-
-First look at the asymptotic behaviors of the solutions of the RW and Zerilli equations. The energy momentum tensor go to zero faster than $1/r^2$ so the integral over a polar volume is finite. The potentials vanish like $1/r^2$. So to leading order in $1/r$ the equations are free schrodinger like equations without a potential. The solution for this equation are thus a superposition of plane waves. 
-We consider that a BH is perturbed and want to look at its time evolution. We are only interested in outgoing waves so we neglect the incoming ones from infinity. For the polar and axial perturbations respectively we get
-\begin{align}
-	Z_{lm}(t,r) &= \int d\omega A_{lm}^{out}(\omega) e^{-i \omega (t-r_*/c)}, \\
-	Q_{lm}(t,r) &= \int d\omega \frac{\omega}{c} B_{lm}^{out}(\omega) e^{-i \omega (t-r_*/c)}.
-\end{align}
-When $r_* \longrightarrow -\infty$ we again have a free equation and find incoming and outgoing waves. Near the horizon we can only have incoming waves because nothing comes out of the black hole. The function $A$ and $B$ will need to be specified then the differential equations with a given source term and correct initial perturbation. (NOT SURE WHY THERE IS A PHASE SHIFT IN OUTGOING WAVE)
-
-\subsubsection{radiation field in the far zone}
-
-Conversion of RW gauge to TT gauge. We then find the energy spectrum. 
-
-\subsection{BH quasi normal modes}
-
-RW and Zerilli equations describe oscillations of spacetime and are interpreted as ringing of black holes.
-Will assume no source term and see how initial perturbation evolves:
-\begin{equation}
-	\phi''(\omega, x) + [\omega^2 -V(x)]\phi(\omega,x) = 0.
-\end{equation}
-
-Potential can be RW or Zerilli. A general evolution of a perturbation would be 
-
-\begin{equation}
-	\phi(t,x) = \sum_n a_n e^{-i\omega_n t } \psi_n(x) 
-\end{equation}
-
-The equation if equivalent to a schrodinger equation but we cannot have bound states because at the boundaries our solution does not vanish. So more correct boundary conditions would be 
-\begin{equation}
-	\phi(\omega,x) \sim e^{+i \omega |x|} \hspace{20mm} (x \longrightarrow \pm \infty).
-\end{equation}
-
-Doing this selects some frequencies as the normal modes of the system, but these can have both real and imaginary parts= quasi normal modes. As can be seen from calculation : $\omega_{QNM} = \omega_R - i \frac{\gamma}{2}$.
-An initial BH perturbation decays producing radiation. (so $\gamma > 0)$
-
-\subsubsection{QNM from Laplace transform}
-
-In time domain we had the equation 
-\begin{equation}
-	[\partial_x^2 - \partial_t^2 - V(x)]\phi(x,t) = 0.
-\end{equation}
-After Laplace transform we get:
-\begin{equation}
-	[\partial_x^2 - s^2 - V(x)]\hat{\phi}(x,t) = \mathcal{J}(s,x)
-\end{equation}
-
-with a source term that depends on the initial conditions. This can be solved by using a Green's function. The solution is given then by equation 12.190 at \cite{maggiore}.
-
-We can find the solution by inverse Laplace transform over complex s-plane. 
-
-First we have the ringdown from the QNMs but when they have vanished we can see the late-time power-law tail. 
-
-\subsubsection{Spectrum of QNM's}
-
-One can proof that the RW and Zerilli operators can always we related by another operator $D_l$ for each $l$.
-A mode emite GWs with frequency $f = \omega_R /2\pi$  and ringdown vanishes with characteristic time $\tau = 1/|\omega_I|$. Beside frequency there also are the excitation factors $B_n$ of QNM's = amplitude of the oscillation (independent of initial perturbation). 
-
-\subsubsection{Interpretation of QNM's spectrum}
-Suprising spectrum. Imaginary part increases monotonically with $n$ while the real part does not. Higher excited states can have longer lifetime than lower excited states. 
-
-\subsubsection{Radiation by infalling points mass}
-
-To get full spectrum of radiation we need use knowledge of QNM contribution. First we calculate the source term in the Zerilli and RW equations.  Find the energy momentum tensor of a point like particle of mass $m$. Then find the coefficients in the expansion of the energy momentum tensor in spherical harmonics. We then find a source term
-\begin{equation}
-	\Tilde{S}_l(\omega,r) = -4m\sqrt{2 \pi} \Big(l + \frac{1}{2}\Big)^{1/2} \frac{A(r)}{\lambda r + 3M} \cdot \Bigg[\Big(\frac{r}{R_s}\Big)^{1/2} - \frac{2i \lambda}{\omega (\lambda r + 3M)} \Bigg]e^{i \omega T(r)}
-\end{equation}
-
-The full Zerilli equation can then be integrated with the Green's function technique. For strategy see page 167 of \cite{maggiore}. 
-
-Energy spectrum for $l=2$ is much larger than for $l=3$. We see a cutoff exponentially beyond a critical value of order 1. With increasing $l$ the position of the maximum moves to higher $\omega$. With increasing $l$ the waveform shows more oscillations but lower amplitude. 
-
-\subsection{perturbations of rotating black holes}
-Rotating celestial bodies are more likely in real nature due to conservation of angular momentum. 
-
-\subsubsection{The Kerr metric}
-
-The Kerr metric in Boyer- Lindquist coordinates is given by
-
-\begin{align*}
-	ds^2 &= -\Big(1- \frac{R_S r}{\rho^2(r,\theta)} \Big) c^2 dt^2 - \frac{2 a R_S r \sin^2 \theta}{\rho^2(r,\theta)} c dt d\phi + \frac{\rho^2(r,\theta)}{\Delta(r)} dr^2 \\
-	&+ \rho^2(r,\theta)d\theta^2 + \Big(r^2 + a^2 + \frac{a^2 R_S r \sin^2 \theta}{\rho^2(r,\theta)} \Big) \sin^2 \theta d\phi^2 ,
-\end{align*}
-
-where $R_S = 2GM/c^2$ ,$a = J/Mc$ and the functions 
-
-\begin{align}
-	\rho^2(r,\theta) &= r^2 +a^2 \cos^2 \theta \\
-	\Delta(r) &= r^2 - R_S r + a^2.
-\end{align}
-
-Light rays at $r_+ = \frac{R_S +\sqrt{R_S^2 - 4a^2}}{2} $ sit on null trajectories. So this radius is the one we will need when studying GW's.
-Unfortunately unlike the Schwarschild BH we can not just write our metric plus perturbation, find a gauge that decouples our components and find a master equation. In the Kerr metric we do not have spherial symmetry but only axial symmetry so separation of variables in spherical harmonics is not possible. Instead of looking at perturbations of the metric we look at those of the curvature. Makes use of components of Weyl tensor projected along a null tetrad.
-
-A null tetrad is a set of four independent four-vectors $z_a^{\mu} = (l^{\mu}, q^{\mu},m^{\mu},\Bar{m}^{\mu}$ for which 
-\begin{equation}
-	g_{\mu \nu}z_a^{\mu}z_a^{\nu} = 0
-\end{equation}
-for each $a$ and also some more orthogonality conditions between the vectors. From this we can write the metric as
-\begin{equation}
-	g^{\mu \nu} = m^{\mu} \Bar{m}^{nu} + m^{\nu} \Bar{m}^{\mu} - l^{\mu} q^{\nu} - l^{\nu} q^{\mu}
-\end{equation}
-
-In the Kerr metric the null tetrads are possibly
-\begin{align}
-	l^{mu} &= \frac{1}{\Delta}  (r^2 +a^2, \Delta ,0 a) \\
-	q^{mu} &= \frac{1}{2\rho^2}  (r^2 a^2, -\Delta, 0,a) \\
-	m^{\mu} &= \frac{1}{\sqrt{2}} \frac{1}{r+i a \cos \theta}\Big( ia \sin \theta,0,1,\frac{i}{\sin \theta} \Big)
-\end{align}
-
-which is known as the Kinnersley tetrad. The quantities of the Newman-Penrose formalism are some projectionq of the Weyl tensor onto the null tetrad. Projecting the Weyl tensor we get some quantities $\Psi_0 \longrightarrow \Psi_4$ known as Weyl scalars. In GR when we consider only $\Psi_4$ which describes the only two degrees of freedom because all the rest vanishes. (for a GW in flat space far from source)
-
-\subsubsection{Teukolsky equation and QNM's of rotating BH's}
-
-To do perturbation theory in this setting first specify background tetrads with subscript $A$. Perturbation means adding a perturbation tetrad with subscript $B$ to the background.  As unpertrubed we can chose the Kinnersley tetrad such that lots of Weyl scalars vanish. Using this formalism we see that $\Psi_0$ and $\Psi_4$ decouple and can be written as a master equation for $\psi = (r-ia\cos \theta )^4 \Psi_4$ when $s= -2$ and $\psi = \Psi_0$ for $s=2$. 
-The resulting Teukolsky is quite complicated but can be separated into spin-weighted spheroidal harmonics and a radial function. From the radial equation we can then find the QNM's of the Kerr BH's the same as we did for the RW and Zerilli equation. 
-
-
-
-hahah for testing testing some more
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\cite{dataAnalysis}
-\bibliographystyle{layout.bst}
-\bibliography{bibliography}
+	
+	\maketitle
+	\section{Reading and some useful topics}
+	In this section I just note some important equations and theory about perturbations to black holes and gravitational waves. Also a recap is given of some interesting papers around this topic. Everything in this section is copied from papers, so do not use any information here literally!
+	\subsection{Quasi normal modes of a black hole}
+	This section is based/copied from \cite{creighton} and from \cite{maggiore}
+	We will discover that BHs have a characteristic set of normal modes that can be excited, for instance by infalling matter, and then decay by emission of gravitational radiation (for this reason, they are rather called quasi-normal modes, to stress that they are damped).
+	FOr the background spacetime we have the vacuum Schwarzschild metric given by the following line element:
+	
+	\begin{equation}
+		ds^2 = - \big(1-\frac{2GM}{c^2r} \big) (cdt)^2 + \big(1-\frac{2GM}{c^2r} \big)^{-1} dr^2 + r^2 d\theta^2 + r^2 \sin^2 \theta d \phi^2 .
+	\end{equation}
+	
+	If we now consider a small pertrubation to our spacetime/metric then the Riemann curvature tensor will take the form
+	
+	\begin{equation*}
+		R_{\alpha \beta \gamma \delta} = \stackrel{0}{R}_{\alpha \beta \gamma \delta} + \stackrel{1}{R}_{\alpha \beta \gamma \delta}
+	\end{equation*}
+	
+	where the $\stackrel{1}{R}_{\alpha \beta \gamma \delta}$ will be the outgoing gravitational-wave perturbation. It is easier to work with the basis vectors 
+	\begin{align}
+		l^{\alpha} &= \frac{1}{\sqrt{2}}\big[ \frac{1}{c}\big(1-\frac{2GM}{c^2r}\big)^{-1},1,0,0 \big] \\
+		k^{\alpha} &= \frac{1}{\sqrt{2}}\big[ \frac{1}{c}, -\big(1-\frac{2GM}{c^2r}\big),0,0 \big] \\
+		m^{\alpha} &=  \frac{1}{\sqrt{2}}\big[ 0, 0,\frac{1}{r},\frac{i}{r \sin \theta} \big].
+	\end{align}
+	
+	They satisfy the properties see \cite{creigthon}. The gravitational wave content is then captured by one single component of the Riemann tensor (WHY?) :
+	
+	\begin{equation}
+		\Psi_4 = -k^{\mu} m^{*\nu} k^{\rho} m^{*\sigma} \stackrel{1}{R}_{\mu \nu \rho \sigma}.
+	\end{equation}
+	
+	Looking at all the non-vanishing Riemann components and assuming that at large distances the gravitational waves will travel out in the radial direction we get for $ \Psi_4$
+	
+	\begin{equation}
+		\Psi_4 = c^{-2} ( \Dot{\Dot{h}}_{+} - i\Dot{\Dot{h}}_{x}) .
+	\end{equation}
+	
+	Then find the gravitational wave equation(4.95 in \cite{creighton}) and then arrive at the Teukolsky equation. This equation is separable into a sperical part and a radial part with the included fourier transform of the time part. This can then be solved for certain values of the eigenfrequency $\omega$ resulting in the quasi normal modes of the black hole. The frequency solutions are complex and so they decay with time exponentially going to the stable state without any perturbation. This analysis can also be done for the Kerr metric (rotating black hole). 
+	
+	\subsection{Gravitational perturbations}
+	Based on \cite{maggiore}.
+	
+	\subsubsection{Axial perturbations}
+	We see that the equation for scalar perturbations and that for axial
+	gravitational perturbations have the same form, with a slightly different
+	effective potential. The latter can be written in a unified manner as
+	
+	\begin{equation}
+		V_l(r) = A(r) \big[\frac{l(l+1)}{r^2} + \frac{(1-\sigma^2)R_S}{r^3} \big],
+	\end{equation}
+	
+	with $\sigma = 0$ for scalar perturbations and $\sigma = 2 $ for axial gravitational perturbations. For electromagnetic perturbations this can be shown to be equal to $\sigma = 1$. So we can associate $\sigma$ with the spin in the interaction. 
+	
+	The Regge-Wheeler equation describing the axial perturbations is
+	
+	\begin{equation}
+		(\partial_*^2 - \partial_0^2)Q_{lm} - V_l^{RW}(r)Q_{lm} = S_{lm}^{ax}
+	\end{equation}
+	with the potential as above for $\sigma = 2$ and the Regge-Wheeler function 
+	\begin{equation}
+		Q_{lm}(t,r) = \frac{1}{r} A(r) h^{(1)}_{lm}(t,r),
+	\end{equation}
+	
+	and a source term $S_{lm}^{ax}$ (see \cite{maggiore} equation (12.99)).
+	
+	The Regge-Wheeler function we perform a Fourier transform 
+	
+	\begin{equation}
+		Q_{lm}(t,r) = \int \frac{d\omega}{2 \pi} \Tilde{Q}_{lm}(\omega ,r) e^{-i\omega t}
+	\end{equation}
+	
+	as well on the source term such that we get a Schrodinger like equation for the Regge-Wheeler function:
+	\begin{equation}
+		\frac{d^2}{dr_*^2}\Tilde{Q}_{lm} + \Big[\frac{\omega^2}{c^2} - V_l^{RW}(r) \Big] \Tilde{Q}_{lm} = \Tilde{S}_{lm}^{ax}
+	\end{equation}
+	
+	\subsubsection{Polar perturbations}
+	
+	We also find equations involving the four polar perturbations $H^{(0)}_{lm}$ , $H^{(1)}_{lm}$ , $H^{(2)}_{lm}$ and $K_{lm}$. For these components we again take the Fourier transform w.r.t time as well as for the source term. Introducing the Zerilli function we can write the dynamical equations for the polar perturbations to a single equation. With a complicated potential and source term. However when you do the calculation you end up with one single Schrodinger like equation, just as we had for the axial perturbations . At large l we even find that asymptotically for large $r$ both the potentials behave the same:
+	\begin{equation}
+		V_l^Z \approx V_l^{RW} \approx \frac{l(l+1)}{r^2}
+	\end{equation}
+	
+	The two potentials will also produce the same spectrum of quasi-normals modes.
+	
+	\subsubsection{Boundary conditions}
+	
+	First look at the asymptotic behaviors of the solutions of the RW and Zerilli equations. The energy momentum tensor go to zero faster than $1/r^2$ so the integral over a polar volume is finite. The potentials vanish like $1/r^2$. So to leading order in $1/r$ the equations are free schrodinger like equations without a potential. The solution for this equation are thus a superposition of plane waves. 
+	We consider that a BH is perturbed and want to look at its time evolution. We are only interested in outgoing waves so we neglect the incoming ones from infinity. For the polar and axial perturbations respectively we get
+	\begin{align}
+		Z_{lm}(t,r) &= \int d\omega A_{lm}^{out}(\omega) e^{-i \omega (t-r_*/c)}, \\
+		Q_{lm}(t,r) &= \int d\omega \frac{\omega}{c} B_{lm}^{out}(\omega) e^{-i \omega (t-r_*/c)}.
+	\end{align}
+	When $r_* \longrightarrow -\infty$ we again have a free equation and find incoming and outgoing waves. Near the horizon we can only have incoming waves because nothing comes out of the black hole. The function $A$ and $B$ will need to be specified then the differential equations with a given source term and correct initial perturbation. (NOT SURE WHY THERE IS A PHASE SHIFT IN OUTGOING WAVE)
+	
+	\subsubsection{radiation field in the far zone}
+	
+	Conversion of RW gauge to TT gauge. We then find the energy spectrum. 
+	
+	\subsection{BH quasi normal modes}
+	
+	RW and Zerilli equations describe oscillations of spacetime and are interpreted as ringing of black holes.
+	Will assume no source term and see how initial perturbation evolves:
+	\begin{equation}
+		\phi''(\omega, x) + [\omega^2 -V(x)]\phi(\omega,x) = 0.
+	\end{equation}
+	
+	Potential can be RW or Zerilli. A general evolution of a perturbation would be 
+	
+	\begin{equation}
+		\phi(t,x) = \sum_n a_n e^{-i\omega_n t } \psi_n(x) 
+	\end{equation}
+	
+	The equation if equivalent to a schrodinger equation but we cannot have bound states because at the boundaries our solution does not vanish. So more correct boundary conditions would be 
+	\begin{equation}
+		\phi(\omega,x) \sim e^{+i \omega |x|} \hspace{20mm} (x \longrightarrow \pm \infty).
+	\end{equation}
+	
+	Doing this selects some frequencies as the normal modes of the system, but these can have both real and imaginary parts= quasi normal modes. As can be seen from calculation : $\omega_{QNM} = \omega_R - i \frac{\gamma}{2}$.
+	An initial BH perturbation decays producing radiation. (so $\gamma > 0)$
+	
+	\subsubsection{QNM from Laplace transform}
+	
+	In time domain we had the equation 
+	\begin{equation}
+		[\partial_x^2 - \partial_t^2 - V(x)]\phi(x,t) = 0.
+	\end{equation}
+	After Laplace transform we get:
+	\begin{equation}
+		[\partial_x^2 - s^2 - V(x)]\hat{\phi}(x,t) = \mathcal{J}(s,x)
+	\end{equation}
+	
+	with a source term that depends on the initial conditions. This can be solved by using a Green's function. The solution is given then by equation 12.190 at \cite{maggiore}.
+	
+	We can find the solution by inverse Laplace transform over complex s-plane. 
+	
+	First we have the ringdown from the QNMs but when they have vanished we can see the late-time power-law tail. 
+	
+	\subsubsection{Spectrum of QNM's}
+	
+	One can proof that the RW and Zerilli operators can always we related by another operator $D_l$ for each $l$.
+	A mode emite GWs with frequency $f = \omega_R /2\pi$  and ringdown vanishes with characteristic time $\tau = 1/|\omega_I|$. Beside frequency there also are the excitation factors $B_n$ of QNM's = amplitude of the oscillation (independent of initial perturbation). 
+	
+	\subsubsection{Interpretation of QNM's spectrum}
+	Suprising spectrum. Imaginary part increases monotonically with $n$ while the real part does not. Higher excited states can have longer lifetime than lower excited states. 
+	
+	\subsubsection{Radiation by infalling points mass}
+	
+	To get full spectrum of radiation we need use knowledge of QNM contribution. First we calculate the source term in the Zerilli and RW equations.  Find the energy momentum tensor of a point like particle of mass $m$. Then find the coefficients in the expansion of the energy momentum tensor in spherical harmonics. We then find a source term
+	\begin{equation}
+		\Tilde{S}_l(\omega,r) = -4m\sqrt{2 \pi} \Big(l + \frac{1}{2}\Big)^{1/2} \frac{A(r)}{\lambda r + 3M} \cdot \Bigg[\Big(\frac{r}{R_s}\Big)^{1/2} - \frac{2i \lambda}{\omega (\lambda r + 3M)} \Bigg]e^{i \omega T(r)}
+	\end{equation}
+	
+	The full Zerilli equation can then be integrated with the Green's function technique. For strategy see page 167 of \cite{maggiore}. 
+	
+	Energy spectrum for $l=2$ is much larger than for $l=3$. We see a cutoff exponentially beyond a critical value of order 1. With increasing $l$ the position of the maximum moves to higher $\omega$. With increasing $l$ the waveform shows more oscillations but lower amplitude. 
+	
+	\subsection{perturbations of rotating black holes}
+	Rotating celestial bodies are more likely in real nature due to conservation of angular momentum. 
+	
+	\subsubsection{The Kerr metric}
+	
+	The Kerr metric in Boyer- Lindquist coordinates is given by
+	
+	\begin{align*}
+		ds^2 &= -\Big(1- \frac{R_S r}{\rho^2(r,\theta)} \Big) c^2 dt^2 - \frac{2 a R_S r \sin^2 \theta}{\rho^2(r,\theta)} c dt d\phi + \frac{\rho^2(r,\theta)}{\Delta(r)} dr^2 \\
+		&+ \rho^2(r,\theta)d\theta^2 + \Big(r^2 + a^2 + \frac{a^2 R_S r \sin^2 \theta}{\rho^2(r,\theta)} \Big) \sin^2 \theta d\phi^2 ,
+	\end{align*}
+	
+	where $R_S = 2GM/c^2$ ,$a = J/Mc$ and the functions 
+	
+	\begin{align}
+		\rho^2(r,\theta) &= r^2 +a^2 \cos^2 \theta \\
+		\Delta(r) &= r^2 - R_S r + a^2.
+	\end{align}
+	
+	Light rays at $r_+ = \frac{R_S +\sqrt{R_S^2 - 4a^2}}{2} $ sit on null trajectories. So this radius is the one we will need when studying GW's.
+	Unfortunately unlike the Schwarschild BH we can not just write our metric plus perturbation, find a gauge that decouples our components and find a master equation. In the Kerr metric we do not have spherial symmetry but only axial symmetry so separation of variables in spherical harmonics is not possible. Instead of looking at perturbations of the metric we look at those of the curvature. Makes use of components of Weyl tensor projected along a null tetrad.
+	
+	A null tetrad is a set of four independent four-vectors $z_a^{\mu} = (l^{\mu}, q^{\mu},m^{\mu},\Bar{m}^{\mu}$ for which 
+	\begin{equation}
+		g_{\mu \nu}z_a^{\mu}z_a^{\nu} = 0
+	\end{equation}
+	for each $a$ and also some more orthogonality conditions between the vectors. From this we can write the metric as
+	\begin{equation}
+		g^{\mu \nu} = m^{\mu} \Bar{m}^{nu} + m^{\nu} \Bar{m}^{\mu} - l^{\mu} q^{\nu} - l^{\nu} q^{\mu}
+	\end{equation}
+	
+	In the Kerr metric the null tetrads are possibly
+	\begin{align}
+		l^{mu} &= \frac{1}{\Delta}  (r^2 +a^2, \Delta ,0 a) \\
+		q^{mu} &= \frac{1}{2\rho^2}  (r^2 a^2, -\Delta, 0,a) \\
+		m^{\mu} &= \frac{1}{\sqrt{2}} \frac{1}{r+i a \cos \theta}\Big( ia \sin \theta,0,1,\frac{i}{\sin \theta} \Big)
+	\end{align}
+	
+	which is known as the Kinnersley tetrad. The quantities of the Newman-Penrose formalism are some projectionq of the Weyl tensor onto the null tetrad. Projecting the Weyl tensor we get some quantities $\Psi_0 \longrightarrow \Psi_4$ known as Weyl scalars. In GR when we consider only $\Psi_4$ which describes the only two degrees of freedom because all the rest vanishes. (for a GW in flat space far from source)
+	
+	\subsubsection{Teukolsky equation and QNM's of rotating BH's}
+	
+	To do perturbation theory in this setting first specify background tetrads with subscript $A$. Perturbation means adding a perturbation tetrad with subscript $B$ to the background.  As unpertrubed we can chose the Kinnersley tetrad such that lots of Weyl scalars vanish. Using this formalism we see that $\Psi_0$ and $\Psi_4$ decouple and can be written as a master equation for $\psi = (r-ia\cos \theta )^4 \Psi_4$ when $s= -2$ and $\psi = \Psi_0$ for $s=2$. 
+	The resulting Teukolsky is quite complicated but can be separated into spin-weighted spheroidal harmonics and a radial function. From the radial equation we can then find the QNM's of the Kerr BH's the same as we did for the RW and Zerilli equation. 
+	
+	\subsection{Bondi-Sachs formalism }
+	Based on the paper \cite{bondisachs}.
+	he Bondi-Sachs formalism of General Relativity is a metric-based treatment of the Einstein equations in which the coordinates are adapted to the null geodesics of the spacetime. It provided the first convincing evidence that that mass loss due to gravitational radiation is a nonlinear effect of general relativity and that the emission of gravitational waves from an isolated system is accompanied by a mass loss from the system. The asymptotic behaviour of the Bondi-Sachs metric revealed the existence of the symmetry group at null infinity, the Bondi-Metzner-Sachs group, which turned out to be larger than the Poincare group.
+	
+	\subsection{The non-linear perturbation of a black hole by
+		gravitational waves. I. The Bondi-Sachs mass loss}
+	Based on \cite{Frauendiener}.
+	In this paper they give an introduction the Initial Boundaty Value Problem( IBVP) framework for the GENRalized Conformal Field Equations (GCFE). Then they will make use of the Bondi components and the specifics on how the system will be evolved. At the end they present some numerical results. Making use of conformal metric by rescaling. 
+	The framework as presented here seems to be ideal to study the interaction of black holes and gravitational waves in a very clean setting. The possibility of setting up initially unperturbed situations and injecting the perturbation from the boundary opens the way to study many more questions of principle.
+	
+	\subsection{Signatures of extra dimensions in gravitational waves from black hole quasi-normal
+		modes}
+	Based on \cite{extraDQNM}.
+	In this work we set out to achieve three goals in a single framework. Effect of extra spatial dimensions on the gravitational perturbation and whether one can provide some possible observational signatures of the same in the ringdown phase of black hole merger. We have explicitly demonstrated that the existence of extra spatial dimensions indeed modifies the gravitational perturbation equation by essentially introducing a tower of massive perturbation modes in addition to the standard massless one.  In particular, we have shown that for the massive modes the imaginary part of the quasi-normal
+	mode frequencies are much small compared to those in general relativity. 
+	
+	\subsection{Testing the no-hair theorem with GW150914, and GW190814, GW190412}
+	Based on \cite{TESTINGNOHAIR}.
+	In this paper gravitational wave data is analysed coming from the detection of a binary black hole merger. In the data they find evidence of the fundamental qnm and at least one overtone ($l = m = 2$). A ringdown model enables to measure the final mass and spin. If this measurement agrees with those from the full waveform then this provides a test for the no hair theorem. In general relativity, radiation from the ringdown stage takes the form of superposed damped sinusoids, corresponding to the quasinormal-mode oscillations of the final Kerr black hole. Rather than nonlinearities, times around the peak are dominated by ringdown overtones—the quasinormal modes with the fastest decay rates, but also the highest amplitudes near the waveform peak. We find evidence of the fundamental mode plus at least one overtone, and obtain a 90 $\%$
+	remnant mass and spin magnitude in agreement with that inferred from the full waveform. This measurement is also consistent with the one obtained using solely the fundamental mode at a later time, but has reduced uncertainties.
+	Another no-hair test was performed on two different high-mass-ratio mergers in \cite{nohair2}. This makes it possible to observe decay modes beyond the dominant ($l = m = 2$) mode to the ($l = m = 3$) mode. 
+	
+	\subsection{scalar hair around BH}
+	Based on \cite{Kerrhair}.
+	Analytic solutions for the stationary profile of scalar clouds have been obtained for a massive scalar field obeying the Klein-Gordon equation on fixed BH background metric. One phenomenon that has generated much interest is their growth around a rotating BH via superradiance. This mechanism allows a Kerr black hole of mass $M$ to transfer energy to a rotating massive boson cloud, provided the frequency of the field satisfies the instability condition.
+	The paper develops a perturbative analytic framework for the accretion of the scalar cloud around the BH. Then simulate these to a non-linear evolution equation by simulations. Then they look at the scalar clouds and look for generation of monochromatic GWs. Throughout this work we will neglect backreaction of the scalar field on the metric, which is a very good approximation for low density fields. (MAYBE INCLUDE?)
+	In section three of this paper they use a perturbative formalism to study the growth of the scalar hair  over time. 
+	
+	\subsection{Gravitational wave signatures of ultralight vector bosons
+		from black hole superradiance}
+	This section is based on the paper in \cite{vectorhair}.
+	In this work, we provide detailed predictions for the gravitational signals originating from a vector boson cloud around a spinning BH arising from superradiance that can be used in performing searches/placing bounds using upcoming GW observations. In the non-relativistic limit the Proca field equations for a vector field on a Kerr spacetime can be found as in equation (1). Solving the the full equations is hard because they do not decouple in the Teukolsky manner. Possible is to solve them using numerical methods. (IDEA?) From \cite{procaansatz} we see that it is possible to separate the Proca quasi normal mode equations by using a correct ansatz, which will be used here. One of the results is thta for superradiantly unstable modes with $m > 1$ overtone modes grow faster than the fundamental modes. This gives an unique spectrum. In this work, we compute GWs using the Teukolsky formalism, which captures linear metric perturbations on a Kerr background, across the entire frequency spectrum. The differential equations of this formalism are of the Sturm-Liouville type, and can be solved using a
+	Green’s function approach. We also describe the evolution of vector boson clouds, assuming the superradiant instability is triggered by a small seed perturbation. Using the Lorentz condition $ \nabla_{\mu}A^{\mu} = 0$ we massive vector equation becomes 
+	\begin{equation}
+		\nabla_{\nu} \nabla^{\nu} A_{\mu} = \mu^2 A_{\mu}
+	\end{equation}
+	with an energy momentum tensor 
+	\begin{equation}
+		T_{\mu \nu} = \mu^2 A_{\mu} A_{\nu} + F_{\mu \alpha} F_{\nu}^{\alpha} - \frac{1}{4} g_{\mu \nu} \big[F_{\alpha \beta} F^{\alpha \beta} + 2 \mu^2 A_{\alpha} A^{\alpha} \big]. 
+	\end{equation}
+	The separation ansatz proposed in \cite{procaansatz} is $A^{\mu} = B^{\mu \nu} \nabla_{\nu} Z$ with $Z= R(r)S(\theta)e^{-i \omega t + im \phi}$.
+	
+	INTERESTING: Use proca perturbations in a higher-dimensional black hole. 
+	In the first section of the paper they solved the linear proca equations around a fixed Kerr spacetime. Now they will use this in the energy momentum tensor to find the resulting properties of the gravitational radiation. This is done by using teh Teukolsky method, describing linear perturbations. The results can be used in searches for the GW signals from ultralight vector boson clouds around spinning BHs. Finally, one can search for, or place constraints on, ultralight vector bosons by looking for a stochastic GW background, similarly to the scalar case. 
+	
+	
+	
+	HYPOTHESE: Hoe zou  scalar/vector boson of fermionic hair rond een zwart gat onstaan? Mogelijk door hawking radiation of door accretie van cosmisch stof? Mogelijkheid om no hair theorem te testen of de informatie discussie rond zwarte gaten?
+	
+	\subsection{Modeling and searching for a stochastic gravitational-wave background
+		from ultralight vector bosons}
+	This section is based on the paper \cite{modelingproca}.
+	This paper is structured as follows. In the first section an overview is given of the superradiant instability and
+	subsequent GW emission by massive vector bosons. Then they discuss in detail the predicted SGWB signal from vector clouds and compare it to the scalar field case. Further they present a Bayesian framework to search for this in GW data and study the mass range.
+	The superradiant instability condition can happen for spin 0 and spin 1 bosons as we saw before. The qualitative picture is the same in either case, the main difference being the generically shorter timescales for the vector field case.
+	No confimations is found in this paper for the existence of vector bosons in a mass range of around $10^{-13} eV$. One could include non-gravitational interactions of vector bosons with other particles like dark photons.
+	
+	\subsection{Quasinormal modes of Dirac field in $2 + 1$ dimensional gravitational
+		wave background}
+	This section is based on the paper in \cite{dirac2+1}. Here we acquire the
+	stability conditions of $2 + 1$ dimensional GW background under Dirac field by obtaining its QNMs.
+	We observe that the imaginary part of QNMs goes to zero for larger Dirac field mass values = proper oscillations. 
+	
+	\subsection{Black holes in massive gravity: quasinormal modes
+		of Dirac field perturbations}
+	Based on paper \cite{QNMDIRAC}.
+	They have studied quasinormal modes of spinor $\frac{1}{2}$, massless Dirac field perturbations of a black hole in massive gravity. Massive gravity is an alternative theory to General Relativity where the graviton, which is a spin two field, acquires a mass.  In comparison with GR where the graviton has two degrees of freedom, in a massive gravity theory the graviton has five degrees of freedom. In this paper they first introduce the black hole in massive gravity. Then the equations for the massless Dirac field of spin $\frac{1}{2}$ is developed and presented. Finally the WKB approach is employed to compute QNM frequencies by varying the parameters in the theory. HYPOTHESIS : Assume massive gravitons and compute GW's from ringdown of black holes (with scalar cloud (as in \cite{MASSIVETHEORYSCALAR} or hair in general) Or from bayesian analysis compute or constrain mass of graviton.
+	
+	\subsection{Hunting for Dark Particles
+		with Gravitational Waves}
+	From the paper \cite{huntdark}.  In this paper they discuss how we can find signatures of new exotic particles from the observation of gravitational waves. Also using gravitational waves we can test the Hawking's area theorem. 
+	Some possible exotic compact object (ECO) are discussed in the first section, like Conventional compact objects ( BH and NS), boson stars, fermion stars, dark matter stars, multi-component stars and dark energy stars for which the maximum mass and compactness is estimated. 
+	We then look at the sensivity of the LIGO detector in the frequency range. The sensisivity is given for a given compactness and mass of the mergers and sits around $50-1000 Hz$. The less compact the ECO's in a merger the longer the wavelength of the GW's, for example for boson or fermion stars. Future GW observations of BH mergers will further test the area theorem. What if
+	these observations do not agree with the theorem’s expectations? Unless one is ready to
+	abandon the basic principles of general relativity, measurements of apparent violations of the
+	area theorem can be used to argue for the existence of ECOs.
+	
+	\subsection{Gravitational waves in massive gravity theories:
+		waveforms, fluxes and constraints from extreme-mass-ratio mergers}
+	Based on the paper in \cite{GWMassG} and \cite{GWMassG2}. 
+	
+	The goal of the former is to compute gravitational waveforms and fluxes from a merger of two objects using the strong field regime os massive gravity theories. No ghost theory describing two interacting spin-2 fields. They consider BHs close to those in GR. They look at the extra polarizations and their impact on the GW waveforms. Schwarschild black holes and Kerr black holes are unstable for massive gravity theories. However the decay time is very long for low mass gravitons. 
+	
+	From the latter we find that in massive gravity has different greybody factors from BH than those in GR. Also, scalar perturbations can not only couple to the background metric but also to new  non-trival background fields. First the review black hole solutions in ghost free massive gravity whereafter perturbations to this spacetime are considered including the new effect of the background fields. Finally they then compute the gravitational waves in asymptotic regions. The coupling to the new Stuckelberg fields results in a separate peak/bump on top of the one caused by gravity in
+	the effective potential. The existence of two peaks then modifies the quasinormal modes in a non-trivial way. It produces echoes in the gravitational wave time series at a later time than the quasinormal mode. In addition, it modifies the frequency of the quasinormal mode. These two signatures provide us with a clear cut way to test massive gravity using gravitational-wave observations.
+	
+	\subsection{On echo intervals in gravitational wave echo analysis}
+	Based on \cite{echoe}.
+	The initial ringdown signal from an ECO can be very similar to that of a GR black hole, if the surface of the ECO is deep inside the photon sphere. GWs reflected by the ECO’s surface, i.e., the echoes, only show up in the GW signals at a later stage. Thus if they can be detected, GW echoes will be
+	evidence of ECOs and a good probe to the physics near the ECO’s surface. Physically, echoes in the late-time ringdown signal are caused by repeated reflections between the ECO’s surface
+	and the potential barrier at the photo sphere. The time interval between two successive echoes marks the scale of the new physics, and thus is an important quantity to consider in search strategies. Two models are tested with injected values to check if the model is sensitive the these kind of signals. The CIE (constant interval echoe) is not very satisfactory, leading to big errors. The UIE is better but should be penalized for being a more complex model but turns out to be favored in the Bayesian model. In the next section of the paper they put constraints on the parameters for the echoes from GW detections using the Fisher information matrix. (curvature of likelihood function). 
+	
+	IDEA : Find papers for (dark) boson stars and more about echo's. 
+	
+	\subsection{GW170817 event rules out general relativity in favor of vector gravity}
+	Based on \cite{GW170817}. 
+	
+	
+	
+	
+	
+	
+	\bibliographystyle{layout.bst}
+	\bibliography{bibliography}
 \end{document}

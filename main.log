@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.30)  25 OCT 2021 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.30)  6 NOV 2021 19:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -246,6 +246,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:\Users\warre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 cfg"))
+("C:\Users\warre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.
+sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 ("C:\Users\warre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
 y"
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
@@ -496,22 +500,22 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 ("C:\Users\warre\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-p
 df.mkii"
@@ -581,7 +585,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring ON on input line 57.
+Package hyperref Info: Link coloring ON on input line 59.
 
 ("C:\Users\warre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -593,41 +597,38 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 57.
-LaTeX Font Info:    Try loading font information for U+msa on input line 59.
+LaTeX Info: Redefining \selectfont on input line 59.
+LaTeX Font Info:    Try loading font information for U+msa on input line 61.
 
 ("C:\Users\warre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 59.
+LaTeX Font Info:    Try loading font information for U+msb on input line 61.
 ("C:\Users\warre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation `creighton' on page 1 undefined on input line 62.
+LaTeX Warning: Citation `creighton' on page 1 undefined on input line 65.
 
 
-LaTeX Warning: Citation `maggiore' on page 1 undefined on input line 62.
-
-
-LaTeX Warning: Citation `creigthon' on page 1 undefined on input line 83.
+LaTeX Warning: Citation `maggiore' on page 1 undefined on input line 65.
 
 [1
 
 {C:/Users/warre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-LaTeX Warning: Citation `creighton' on page 2 undefined on input line 95.
+LaTeX Warning: Citation `creigthon' on page 2 undefined on input line 86.
 
 
-LaTeX Warning: Citation `maggiore' on page 2 undefined on input line 98.
+LaTeX Warning: Citation `creighton' on page 2 undefined on input line 98.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -637,7 +638,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 
-LaTeX Warning: Citation `maggiore' on page 3 undefined on input line 121.
+LaTeX Warning: Citation `maggiore' on page 3 undefined on input line 101.
+
+
+LaTeX Warning: Citation `maggiore' on page 3 undefined on input line 124.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -654,10 +658,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 
-LaTeX Warning: Citation `maggiore' on page 5 undefined on input line 190.
-
-
-LaTeX Warning: Citation `maggiore' on page 5 undefined on input line 211.
+LaTeX Warning: Citation `maggiore' on page 5 undefined on input line 193.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -667,6 +668,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
+LaTeX Warning: Citation `maggiore' on page 6 undefined on input line 214.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -674,10 +678,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6]
 
-LaTeX Warning: Citation `dataAnalysis' on page 7 undefined on input line 281.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-(main.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
+[7]
+
+LaTeX Warning: Citation `bondisachs' on page 8 undefined on input line 264.
+
+
+LaTeX Warning: Citation `Frauendiener' on page 8 undefined on input line 269.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -685,27 +696,136 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
+[8]
+
+LaTeX Warning: Citation `extraDQNM' on page 9 undefined on input line 275.
+
+
+Overfull \hbox (24.47102pt too wide) in paragraph at lines 279--279
+[]\OT1/cmr/bx/n/14.4 Testing the no-hair the-o-rem with GW150914, and GW190814,
+
+ []
+
+
+LaTeX Warning: Citation `TESTINGNOHAIR' on page 9 undefined on input line 280.
+
+
+LaTeX Warning: Citation `nohair2' on page 9 undefined on input line 283.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+
+LaTeX Warning: Citation `Kerrhair' on page 10 undefined on input line 286.
+
+
+LaTeX Warning: Citation `vectorhair' on page 10 undefined on input line 293.
+
+
+LaTeX Warning: Citation `procaansatz' on page 10 undefined on input line 294.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+
+LaTeX Warning: Citation `procaansatz' on page 11 undefined on input line 303.
+
+
+LaTeX Warning: Citation `modelingproca' on page 11 undefined on input line 314.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 321.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 321.
+
+
+LaTeX Warning: Citation `dirac2+1' on page 12 undefined on input line 322.
+
+
+LaTeX Warning: Citation `QNMDIRAC' on page 12 undefined on input line 328.
+
+
+LaTeX Warning: Citation `MASSIVETHEORYSCALAR' on page 12 undefined on input lin
+e 329.
+
+
+LaTeX Warning: Citation `huntdark' on page 12 undefined on input line 333.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+
+LaTeX Warning: Citation `GWMassG' on page 13 undefined on input line 342.
+
+
+LaTeX Warning: Citation `GWMassG2' on page 13 undefined on input line 342.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+
+LaTeX Warning: Citation `echoe' on page 14 undefined on input line 350.
+
+
+LaTeX Warning: Citation `GW170817' on page 14 undefined on input line 358.
+
+(main.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 367.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 367.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 284.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 367.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 367.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 66B8AA590764D1EE1F444D7981D2E9A8;3130.
+(rerunfilecheck)             Checksum: 54CC57DA39BCC4F84F979B70ABBBF430;8888.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 367.
  ) 
 Here is how much of TeX's memory you used:
- 12690 strings out of 492970
- 184158 string characters out of 3126593
- 282469 words of memory out of 3000000
- 16373 multiletter control sequences out of 15000+200000
+ 12771 strings out of 492970
+ 185309 string characters out of 3126593
+ 282757 words of memory out of 3000000
+ 16428 multiletter control sequences out of 15000+200000
  12750 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,634b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,43p,1138b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/warre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/warre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb><C:/Users/warre/AppData/Local/Programs/MiKTeX 2.9/f
@@ -722,9 +842,9 @@ rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/warre/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/
 warre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
 fb>
-Output written on main.pdf (7 pages, 191665 bytes).
+Output written on main.pdf (14 pages, 228945 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 274 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
