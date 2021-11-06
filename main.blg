@@ -1,8 +1,12 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
-I couldn't open style file layout.bst.bst
----line 71 of file main.aux
- : \bibstyle{layout.bst
- :                     }
-I'm skipping whatever remains of this command
-I found no style file---while reading file main.aux
-(There were 2 error messages)
+The style file: plain.bst
+Database file #1: biblio.bib
+Warning--I didn't find a database entry for "creigthon"
+Warning--empty journal in Kerrhair
+Warning--empty journal in nohair2
+Warning--empty journal in GWMassG
+Warning--empty journal in extraDQNM
+Warning--empty journal in GWMassG2
+Warning--empty publisher in creighton
+Warning--empty journal in TESTINGNOHAIR
+(There were 8 warnings)

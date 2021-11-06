@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.30)  6 NOV 2021 19:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.30)  6 NOV 2021 19:31
 entering extended mode
 **./main.tex
 (main.tex
@@ -614,21 +614,11 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 61.
 ("C:\Users\warre\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: Citation `creighton' on page 1 undefined on input line 65.
-
-
-LaTeX Warning: Citation `maggiore' on page 1 undefined on input line 65.
-
-[1
+) [1
 
 {C:/Users/warre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
 LaTeX Warning: Citation `creigthon' on page 2 undefined on input line 86.
-
-
-LaTeX Warning: Citation `creighton' on page 2 undefined on input line 98.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -637,12 +627,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-
-LaTeX Warning: Citation `maggiore' on page 3 undefined on input line 101.
-
-
-LaTeX Warning: Citation `maggiore' on page 3 undefined on input line 124.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -658,18 +642,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 
-LaTeX Warning: Citation `maggiore' on page 5 undefined on input line 193.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [5]
-
-LaTeX Warning: Citation `maggiore' on page 6 undefined on input line 214.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -685,32 +663,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7]
 
-LaTeX Warning: Citation `bondisachs' on page 8 undefined on input line 264.
-
-
-LaTeX Warning: Citation `Frauendiener' on page 8 undefined on input line 269.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [8]
-
-LaTeX Warning: Citation `extraDQNM' on page 9 undefined on input line 275.
-
-
 Overfull \hbox (24.47102pt too wide) in paragraph at lines 279--279
 []\OT1/cmr/bx/n/14.4 Testing the no-hair the-o-rem with GW150914, and GW190814,
 
  []
-
-
-LaTeX Warning: Citation `TESTINGNOHAIR' on page 9 undefined on input line 280.
-
-
-LaTeX Warning: Citation `nohair2' on page 9 undefined on input line 283.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -720,28 +682,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 
-LaTeX Warning: Citation `Kerrhair' on page 10 undefined on input line 286.
-
-
-LaTeX Warning: Citation `vectorhair' on page 10 undefined on input line 293.
-
-
-LaTeX Warning: Citation `procaansatz' on page 10 undefined on input line 294.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [10]
-
-LaTeX Warning: Citation `procaansatz' on page 11 undefined on input line 303.
-
-
-LaTeX Warning: Citation `modelingproca' on page 11 undefined on input line 314.
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
@@ -758,19 +704,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 321.
 
 
-LaTeX Warning: Citation `dirac2+1' on page 12 undefined on input line 322.
-
-
-LaTeX Warning: Citation `QNMDIRAC' on page 12 undefined on input line 328.
-
-
-LaTeX Warning: Citation `MASSIVETHEORYSCALAR' on page 12 undefined on input lin
-e 329.
-
-
-LaTeX Warning: Citation `huntdark' on page 12 undefined on input line 333.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
@@ -778,25 +711,52 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12]
 
-LaTeX Warning: Citation `GWMassG' on page 13 undefined on input line 342.
-
-
-LaTeX Warning: Citation `GWMassG2' on page 13 undefined on input line 342.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[13] (main.bbl
 
-LaTeX Warning: Citation `echoe' on page 14 undefined on input line 350.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+
+! Package inputenc Error: Unicode character  (U+83)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 Thomas MÃ
+                 Â¤dler and Jeffrey Winicour.
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
 
-LaTeX Warning: Citation `GW170817' on page 14 undefined on input line 358.
+! Package inputenc Error: Unicode character ¤ (U+A4)
+(inputenc)                not set up for use with LaTeX.
 
-(main.bbl)
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 Thomas MÃÂ¤
+                     dler and Jeffrey Winicour.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 367.
 
 
@@ -805,7 +765,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[16]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 367.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 367.
@@ -819,13 +779,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 367.
  ) 
 Here is how much of TeX's memory you used:
- 12771 strings out of 492970
- 185309 string characters out of 3126593
- 282757 words of memory out of 3000000
- 16428 multiletter control sequences out of 15000+200000
+ 12798 strings out of 492970
+ 185643 string characters out of 3126593
+ 283366 words of memory out of 3000000
+ 16433 multiletter control sequences out of 15000+200000
  12750 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,1138b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,43p,1141b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/warre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/warre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb><C:/Users/warre/AppData/Local/Programs/MiKTeX 2.9/f
@@ -842,9 +802,9 @@ rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/warre/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/
 warre/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
 fb>
-Output written on main.pdf (14 pages, 228945 bytes).
+Output written on main.pdf (16 pages, 243270 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
+ 332 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
  225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
